@@ -2,22 +2,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Sunmin",
+    "title": "About",
     "section": "",
-    "text": "I am a first year doctoral student studying criminology. My research topic is on \nCyber Crime, Criminal decision making and Criminal history policies.\n\n### More Information\n\nInterests:\n\n  * Data Science \n  * Machine learning\n\n### Contact me\n\n[sunmin.hong@utdallas.edu]\n\n[Website](https://SunminCrim.github.io)"
+    "text": "My name is Sunmin Hong, and I’m a third year doctoral candidate in criminology and criminal justice program at UT Dallas.\n\nMore Information\nResearch Interests:\n\nCybercrimes\nCriminal Justice Policies\nEnvironmental Criminology\n\n\n\nContact me\n[sunmin.hong@utdallas.edu]"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Assignment_1",
+    "title": "assignment1",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "Assignment.html",
-    "href": "Assignment.html",
-    "title": "Assignment_1",
-    "section": "",
-    "text": "1. Start drafting a research project framework:\n\na. Identify a topic of interest \n\n   Our topic is identifying the characteristics of criminals who engage in phishing crimes\n   in South Korea. Specifically, they will be divided into several groups based on their\n   sociodemographic characteristics and crime participation path as variables. After that,\n   a risk group with the highest distribution of all variables will be selected,\n   and crime risk factors based on their characteristics will be displayed.\n   \nb. Write up the research question \n\n   (1) Unsupervised Learning 1: What socio-economic variable are classified based on the \n   characteristics of fishing criminals?\n\n   (2) Unsupervised learning 2: What is the distribution of the difference in the influence \n   of variables that contribute to dividing the characteristics of criminals?\n\n   (3) Supervised Learning 1: What is the statistical relationship of the most influential. \n   variable with other variables? (regression)\n\n   (4) Supervised Learning 2: How to create a model for predicting variables with great \n   influence?\n   \nc. Do you have a dependent variable? \n\n   We will find the most influential variable through unsupervised learning and use that. \n   variable as a dependent variable to find the most suitable model through supervised. \n   learning.\n   \nd. What is the hypothes is?\n\n   After analyzing existing studies on criminals who engage in cybercrime, especially. \n   phishing, we will create hypotheses related to the characteristics of criminals who engage\n   in phishing.\n\n2. Six steps in research: \n\na. Topic identification/Motivation \n\n   As a result of collecting data on demographic characteristics and crime participation. \n   paths of criminals who participated in phishing crimes in South Korea, the information to \n   be set as variables could be classified into their participation path, gender, age, \n   criminal record, occupation, and education. After creating several groups that engage in \n   phishing crimes based on this information, we will reveal what characteristics the most \n   dangerous groups have.\n   \nb. Systematic Literature Review/Meta Analysis \n\n   In progress\n   \nc. Model of Interest: Data-based, Algorithm-based or Hybrid \n\n   We will use a data-driven model using information about the characteristics of criminals \n   involved in phishing crimes.\n\nd. Data Collection and Management \n\n   We have already obtained data containing information about the characteristics of \n   criminals involved in phishing crimes, and after processing the missing data, we will \n   proceed with the aforementioned procedure.\n\ne. Writing tool (e.g. LaTeX, Markdown/quarto, overleaf, MathJax) \n   \n   We will use programs such as LaTex or Overleaf that show publication-level quality to \n   reveal the \bcharacteristics of the phishing offender.\n   \nf. Findings interpreted (e.g. models, data visualization)\n\n   We will use the visualization method that best represents the results for different groups\n   , including the most risky group mentioned above."
   }
 ]
