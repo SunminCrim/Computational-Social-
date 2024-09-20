@@ -9,12 +9,10 @@ website:
         text: Home
       - href: Sunmin.cv.pdf
         text: Curriculum Vitae
-      - href: assignmnet.1.qmd
-        text: assignmnet.1
-      - href: assignmnet.2.qmd
-        text: assignmnet.2  
-
-        
+      - href: assignment1.qmd
+        text: assignmnet1
+      - href: assignment2.qmd
+        text: assignmnet2
 format:
   html:
     theme: cosmo
@@ -22,4 +20,9 @@ format:
     toc: true
 
 editor: visual
+
+
+
+
+
 
