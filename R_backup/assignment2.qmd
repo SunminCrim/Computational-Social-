@@ -1,0 +1,117 @@
+---
+title: "assignment2"
+---
+
+# **assignment2**
+
+1.  Building a Qualtrics Panel
+
+    ![](https://sunmincrim.github.io/Sunmin.Hong_Data.Collection/images/image-310966148.png)
+
+2.  \(1\) Use Google Trends website
+
+```{r}
+# Load required libraries
+library(readr)
+library(lubridate)
+
+```
+
+
+```{r}
+# Read the CSV file without parsing dates
+trends_data <- read_csv("multiTimeline.csv", skip = 2, col_names = FALSE, 
+                        col_types = cols(.default = "c"))
+
+# Rename columns
+colnames(trends_data) <- c("Time", "Trump", "Kamala_Harris", "Election")
+
+# Print first few rows to check the data
+print(head(trends_data))
+```
+
+```{r}
+# Convert Time column to proper datetime format
+# Adjust the format based on your actual data
+trends_data$Time <- parse_date_time(trends_data$Time, orders = c("mdy HM", "ymd HM"))
+```
+
+```{r}
+# Date analysis
+start_time <- min(trends_data$Time, na.rm = TRUE)
+```
+
+```{r}
+end_time <- max(trends_data$Time, na.rm = TRUE)
+```
+
+```{r}
+time_range <- as.numeric(difftime(end_time, start_time, units = "hours"))
+
+# Interval analysis
+number_of_datapoints <- nrow(trends_data)
+interval <- as.numeric(difftime(trends_data$Time[2], trends_data$Time[1], units = "hours"))
+
+# Print results
+cat("Date Analysis:\n")
+```
+
+```{r}
+cat("End Time:", format(end_time, "%Y-%m-%d %H:%M:%S"), "\n")
+```
+
+```{r}
+cat("Time Range:", time_range, "hours\n\n")
+```
+
+```{r}
+cat("Interval Analysis:\n")
+```
+
+```{r}
+cat("Number of Data Points:", number_of_datapoints, "\n")
+```
+
+```{r}
+cat("Interval between data points:", interval, "hours\n")
+```
+
+(2) Use gtrendsR package to collect data
+
+```{r}
+# Load library
+library(gtrendsR)
+library(ggplot2)
+
+# Fetch data
+HarrisTrumpElection <- gtrends(keyword = c("Trump", "Harris", "election"), time = "all")
+
+# Select data for plotting
+HarrisTrumpElection_interest <- HarrisTrumpElection$interest_over_time
+HarrisTrumpElection_interest <- na.omit(HarrisTrumpElection_interest)
+
+# Plot data
+par(family="Georgia")
+plot(HarrisTrumpElection_interest$date, HarrisTrumpElection_interest$hits, type="l",
+     main="Google Trends: Trump, Harris, Election", xlab="Date", ylab="Search Interest")
+```
+
+```{r}
+# Try another dataset
+borderimg <- gtrends(keyword = c("border", "immigrant"), time = "all")
+
+# Collect data by timeframe
+last_hour <- gtrends(keyword = c("Harris", "Trump"), time = "now 1-H")
+last_30_days <- gtrends(keyword = c("Harris", "Trump"), time = "today 1-m")
+
+# Collect data by country
+tg_gb <- gtrends(keyword = c("immigrants"), geo = c("GB", "US"), time = "all")
+
+# Check country codes
+data("countries")
+head(countries)
+```
+
+(3). What are the differences between the two methods?
+
+The Google Trends website offers a user-friendly interface for manual data collection via CSV downloads, making it suitable for casual use, but it has limitations in flexibility, automation, and precision. In contrast, the gtrendsR package in R provides programmatic API access, allowing automated, reproducible data collection with greater flexibility in parameter adjustments and time range specifications. While the website requires additional data cleaning and is less suited for systematic research, gtrendsR delivers data directly as R objects, making it more efficient for thorough data analysis in research projects.

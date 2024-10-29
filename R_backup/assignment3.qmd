@@ -1,0 +1,59 @@
+---
+title: "assignment.3"
+format: html
+editor: visual
+---
+
+# Biden-Xi summit data:
+
+Hashtag Network Analysis:
+
+Central hashtags: #china, #xijinping, #biden Key issue clusters:
+
+Human rights: #uyghurgenocide, #humanrights, #uyghurs Meeting topics: #biden, #xijinping, #china Regional issues: #taiwan Other concerns: #coronavirus, #fentanyl
+
+Notable connections: #china is centrally connected to #taiwan and #usa
+
+User Mention Network Analysis:
+
+Several distinct user groups:
+
+News media accounts: @politico, @foxbusiness NBA-related accounts: @nba, @pelicansnba, @capitalonearena Various individual user clusters
+
+# US presidential inaugural speeches:
+
+Common Words Across Presidents:
+
+Core terms: "american", "freedom", "country", "nation" Action words: "must", "can" Collective terms: "people", "us"
+
+Presidential Distinctions:
+
+Bush: emphasis on "freedom" and "liberty" Obama: focus on "time", "new", and "change" Trump: strong emphasis on "america" and "american" Biden: emphasis on "democracy" and "nation"
+
+i.  Similarities and differences:
+
+Similarities: All presidents consistently use patriotic language and emphasize unity Differences: Each president shows unique word preferences reflecting their era's challenges and their political priorities Time Changes: Evolution from traditional values to modern global concerns visible in word choices
+
+# Wordfish
+
+It is a statistical model used in text analysis. Its key features and uses are as follows:
+
+Basic Concept:
+
+An unsupervised scaling algorithm that estimates ideological positions from political texts Automatically estimates document positions based on word frequency patterns
+
+Operating Mechanism:
+
+Analyzes relative differences in word usage patterns Models word frequency using Poisson distribution Places documents on a single dimension (typically ideological spectrum)
+
+Main Applications:
+
+Analysis of political speeches Comparison of party manifestos Identifying ideological positions in policy documents Tracking changes in political discourse over time
+
+Advantages:
+
+Can determine relative document positions without prior information Provides objective text analysis method Suitable for large-scale document analysis
+
+Analysis Examples:
+
+Analyzing ideological changes in presidential inaugural speeches Identifying differences in party policy documents Tracking changes in political discourse over time

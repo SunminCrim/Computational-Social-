@@ -1,0 +1,33 @@
+---
+title: "assignment4"
+---
+1.  Wikipedia Data Scraping Used rvest_wiki01.R to scrape foreign reserve data from Wikipedia. The process used R's rvest package to extract table data from the webpage, then cleaned and processed the data.
+
+2.  Government Documents Download Used govtdata01.R to download documents from govinfo.gov. Results: Successfully downloaded documents:
+
+CPRT-109JPRT25514 CPRT-115SPRT28545 CPRT-115SPRT23704
+
+Failed downloads:
+
+2 documents with valid URLs failed 5 documents had NA values in URL fields
+
+3.  Scraping Process Report
+4.  Data Usability
+
+Wikipedia Data:
+
+Successfully extracted foreign reserves table Data properly structured with country names and values Dates successfully converted to proper format
+
+Government Documents:
+
+30% success rate in document retrieval (3 out of 10) Downloaded documents are usable PDF files Some URLs were inaccessible or invalid
+
+b.  Improvement Suggestions
+
+For Wikipedia Scraping:
+
+Add error handling for table structure changes Implement automatic table detection Add data validation steps
+
+For Government Documents:
+
+Implement URL validation before download Add retry mechanism for failed downloads Better error logging and reporting Alternative download methods for failed cases
